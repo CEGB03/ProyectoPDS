@@ -1,0 +1,123 @@
+/* Estilos generales */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffc0cb, #e6e6fa, #add8e6);
+}
+
+.login-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#loginButton {
+    background-color: #333;
+    color: white;
+}
+
+#forgotCredentials {
+    background-color: transparent;
+    color: #666;
+    text-decoration: underline;
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Tabletas (pantallas de hasta 768px) */
+@media screen and (max-width: 768px) {
+    .login-card {
+        padding: 1.5rem;
+        max-width: 350px;
+    }
+
+    button {
+        width: 48%;
+        padding: 0.75rem;
+    }
+
+    input {
+        padding: 0.65rem;
+    }
+}
+
+/* Móviles (pantallas de hasta 480px) */
+@media screen and (max-width: 480px) {
+    .login-card {
+        padding: 1rem;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 0.75rem;
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    #forgotCredentials {
+        text-align: center;
+        width: 100%;
+    }
+}

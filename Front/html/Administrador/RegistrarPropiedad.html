@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeltranSoft - Registro de Nueva Propiedad</title>
+  <link rel="stylesheet" href="../../css/RegistrarPropiedad.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="beltransoft-logo.png" alt="BeltranSoft Logo">
+    <span>BeltranSoft</span>
+  </div>
+  <nav>
+    <button class="nav-button" onclick="window.location.href='AdministradorAcciones.html'">Atras</button>
+    <button class="nav-button" onclick="window.location.href='../login.html'">Cerrar Sesion</button>
+  </nav>
+</header>
+<main>
+  <form class="property-form">
+    <h2>Registro de Nueva Propiedad</h2>
+    <div class="form-group">
+      <label for="direccion">Dirección de la Propiedad *</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
+    <div class="form-group">
+      <label for="id">ID del Propietario *</label>
+      <input type="text" id="id" name="id" required>
+    </div>
+    <div class="form-group">
+      <label for="tipo">Tipo de propiedad *</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Seleccione un tipo</option>
+        <option value="casa">Casa</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="local">Local comercial</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="metros">Cantidad de metros cuadrados *</label>
+      <input type="number" id="metros" name="metros" required>
+    </div>
+    <div class="form-group">
+      <label for="banos">Cantidad de baños *</label>
+      <input type="number" id="banos" name="banos" required>
+    </div>
+    <div class="form-group">
+      <label for="habitaciones">Cantidad de habitaciones *</label>
+      <input type="number" id="habitaciones" name="habitaciones" required>
+    </div>
+    <button type="submit" class="submit-button">Registrar</button>
+  </form>
+</main>
+<script src="../../js/RegPropiedad.js"></script>
+</body>
+</html>

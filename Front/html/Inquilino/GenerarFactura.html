@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeltranSoft - Selección de Pagos</title>
+    <link rel="stylesheet" href="../../css/GenerarFactura.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="beltransoft-logo.png" alt="BeltranSoft Logo">
+        <span>BeltranSoft</span>
+    </div>
+    <nav>
+        <button class="nav-button" onclick="window.location.href='./InquilinoAcciones.html'">Atras</button>
+        <button class="nav-button" onclick="window.location.href='../login.html'">Cerrar Sesion</button>
+    </nav>
+</header>
+<main>
+    <div class="payment-form">
+        <h2>Seleccione qué desea pagar *</h2>
+        <form id="paymentForm">
+            <label><input type="checkbox" name="payment" value="Renta Mensual"> Renta Mensual</label>
+            <label><input type="checkbox" name="payment" value="Depósito de Seguridad"> Depósito de Seguridad</label>
+            <label><input type="checkbox" name="payment" value="Mantenimiento"> Mantenimiento</label>
+            <label><input type="checkbox" name="payment" value="Servicios Públicos"> Servicios Públicos</label>
+            <label><input type="checkbox" name="payment" value="Multas o Penalidades"> Multas o Penalidades</label>
+            <label><input type="checkbox" name="payment" value="Reparaciones"> Reparaciones</label>
+            <label><input type="checkbox" name="payment" value="Mejoras o Modificaciones"> Mejoras o Modificaciones</label>
+            <label><input type="checkbox" name="payment" value="Intereses Moratorios"> Intereses Moratorios</label>
+        </form>
+        <div class="total">
+            <span>Su total a pagar será: $</span>
+            <span id="totalAmount">0</span>
+        </div>
+
+        <!-- Casilla de verificación para la aceptación de términos -->
+        <div id="acceptTermsContainer" style="display: none;">
+            <label><input type="checkbox" id="acceptTerms"> Acepto que la factura es válida por 48 horas</label>
+        </div>
+
+        <!-- Botón de pago, oculto inicialmente -->
+        <button id="payButton" style="display: none;">Pagar</button>
+    </div>
+</main>
+
+<!-- Script de jsPDF para la generación del PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="../../js/GenFactura.js"></script> <!-- Enlace al archivo JS -->
+</body>
+</html>

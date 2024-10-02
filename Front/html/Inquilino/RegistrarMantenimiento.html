@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mantenimiento</title>
+    <link rel="stylesheet" href="../../css/RegistrarMantenimiento.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="beltransoft-logo.png" alt="BeltranSoft Logo">
+        <span>BeltranSoft</span>
+    </div>
+    <nav>
+        <button class="nav-button" onclick="window.location.href='InquilinoAcciones.html'">Atras</button>
+        <button class="nav-button" onclick="window.location.href='../login.html'">Cerrar Sesion</button>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <h1>Registro de Mantenimiento</h1>
+        <form class="maintenance-form" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="unidad">Unidad Funcional *</label>
+                <input type="text" id="unidad" name="unidad" required>
+            </div>
+            <div class="form-group">
+                <label for="personal">Nombre Personal Mantenimiento *</label>
+                <input type="text" id="personal" name="personal" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha (DD/MM/AAAA) *</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios *</label>
+                <textarea id="comentarios" name="comentarios" required></textarea>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</main>
+<script src="../../js/RegInquilino.js"></script>
+</body>
+</html>

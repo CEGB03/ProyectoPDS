@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "documento": "12345678",
+    "nombre": "Juan Pérez",
+    "telefono": "123456789"
+  },
+  {
+    "id": 2,
+    "documento": "87654321",
+    "nombre": "María López",
+    "telefono": "987654321"
+  }
+]

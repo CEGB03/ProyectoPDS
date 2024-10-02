@@ -1,0 +1,21 @@
+{
+  "name": "proyecto_psd1",
+  "version": "1.0.0",
+  "description": "Backend para gestionar inquilinos y alquileres",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./Back/server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jspdf": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT"
+}
