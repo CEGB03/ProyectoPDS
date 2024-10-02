@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Alquileres</title>
+    <link rel="stylesheet" href="../../css/Propietario.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <div class="logo">
+        <img src="beltransoft-logo.png" alt="BeltranSoft Logo">
+        <span>BeltranSoft</span>
+    </div>
+    <nav>
+        <button class="nav-button" onclick="window.location.href='./PropietarioAcciones.html'">Atrás</button>
+        <button class="nav-button" onclick="window.location.href='../login.html'">Cerrar Sesión</button>
+    </nav>
+    <h1>Mis alquileres</h1>
+</header>
+<main>
+    <section class="rental-details">
+        <h2>Detalles de alquileres</h2>
+        <div class="detail-group">
+            <h3>Unidad Funcional</h3>
+            <p><strong>Nombre de unidad funcional:</strong> <span id="unitName"></span></p>
+            <p><strong>Dirección:</strong> <span id="unitAddress"></span></p>
+            <p><strong>Estado:</strong> <span id="unitStatus"></span></p>
+        </div>
+        <div class="detail-group">
+            <h3>Datos del inquilino</h3>
+            <p><strong>Nombre completo:</strong> <span id="tenantName"></span></p>
+            <p><strong>DNI:</strong> <span id="tenantDNI"></span></p>
+            <p><strong>Teléfono:</strong> <span id="tenantPhone"></span></p>
+        </div>
+        <div class="detail-group">
+            <h3>Datos del alquiler</h3>
+            <p><strong>Costo de alquiler mensual:</strong> $<span id="rentalCost"></span></p>
+            <p><strong>Fecha último mantenimiento:</strong> <span id="lastMaintenance"></span></p>
+        </div>
+    </section>
+</main>
+<script src="../../js/MisAlquileres.js"></script>
+</body>
+</html>
